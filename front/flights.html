@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Аэрофлот - Просмотр рейсов</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="user-info">
+      <div class="avatar" onclick="showMiniPage()">
+        <img class="image" src="/images/user-svgrepo-com.svg" alt="Avatar">
+      </div>
+      <div class="mini-page" id="miniPage">
+        <a href="#" class="logout-button" onclick="logout()">Выход из аккаунта?</a>
+      </div>
+  </header>
+
+  <main>
+    <div class="checking-flight"><h1 class="page-title">Просмотр рейсов</h1></div>
+    <div class="container">
+      <h2>Рейсы авиакомпании Аэрофлот</h2>
+      <ul class="flight-list" id="arrival-list">
+        <li><a>Рейс</a>  <a>Дата</a> <a>Время</a> <a>Цена</a></li>
+      </ul>
+  </main>
+
+  <footer>
+    <p>© 2023 Аэрофлот. Все права защищены.</p>
+  </footer>
+
+  <script src="getData.js"></script>
+</body>
+</html>
